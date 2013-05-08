@@ -68,7 +68,7 @@ range.to_s
 #=> "1-4"
 ```
 
-It will also compensate for crap input. Don't do this.
+It will also compensate for crap input. Human friendly!
 
 ```
 range = FriendlyRange.new('1    - 4  , 8-  9     , 10')
