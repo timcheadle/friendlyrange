@@ -4,7 +4,7 @@ $:.unshift lib unless $:.include?(lib)
 
 Gem::Specification.new do |s|
   s.name        = "friendlyrange"
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Tim Cheadle"]
   s.email       = ["tim@rationalmeans.com"]
@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
 
   s.add_development_dependency "rspec", "~> 2.13.0"
 
-  s.files        = Dir.glob("{bin,lib}/**/*") + %w(README.md)
+  s.files        = Dir.glob("{bin,lib}/**/*") + %w(LICENSE.md README.md)
   s.require_path = 'lib'
 end
