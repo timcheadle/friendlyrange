@@ -68,6 +68,18 @@ range.to_s
 #=> "1-4"
 ```
 
+It will also compensate for crap input. Don't do this.
+
+```
+range = FriendlyRange.new('1    - 4  , 8-  9     , 10')
+
+range.to_a
+# => [1, 2, 3, 4, 8, 9, 10]
+
+range.to_s
+# => "1-4, 8-10"
+```
+
 ### Feedback
 
 I'd love any feedback. Just file an issue or pull request. Please make sure any pull requests have tests for whatever you've changed.
